@@ -1,0 +1,5 @@
+@color-fg:#111;@color-bg:#fff;@color-accent:#005fcc;
+html,body{margin:0;padding:0;color:@color-fg;background:@color-bg;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+a,button,input,[tabindex]{&:focus-visible{outline:2px solid @color-accent;outline-offset:2px}}
+.skiplink{position:absolute;left:-9999px;top:0}
+.skiplink:focus-visible{left:8px;top:8px;background:@color-accent;color:@color-bg;padding:6px 10px;border-radius:4px}
