@@ -1,0 +1,35 @@
+{
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": true,
+  "cSpell.words": [
+    "bestimmt",
+    "bleibt",
+    "Diese",
+    "einfachen",
+    "erfahren",
+    "erklaert",
+    "gehoert",
+    "hier",
+    "Hilfe",
+    "inhalt",
+    "liefern",
+    "logik",
+    "Mehr",
+    "routewechsel",
+    "Schritten",
+    "screenreader",
+    "Senioren",
+    "Technik",
+    "Willkommen"
+  ],
+  "commentTranslate.targetLanguage": "de",
+  "nuxtr.defaultPackageManager": "NPM",
+  "nuxtr.openItemsAfterCreation": true,
+  "nuxtr.vueFiles.script.type": "normal",
+  "nuxtr.vueFiles.style.defaultLanguage": "less",
+  "nuxtr.vueFiles.template.defaultLanguage": "pug",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.defaultFormatter": "Nuxtr.nuxtr-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  }
+}

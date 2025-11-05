@@ -5,5 +5,21 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt'],
   typescript: { strict: true, typeCheck: true },
   css: ['@/assets/styles/base.less'],
-  app: { head: { title: 'Senioren Tech Hilfe', meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }] } }
+  app: { 
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      title: 'Senioren Tech Hilfe', 
+      meta: [{ 
+        name: 'viewport', 
+        content: 'width=device-width, initial-scale=1' }] 
+    }
+  },
+  vite: {
+    vue: {
+      customElement: true,
+    },
+    vueJsx: {
+      mergeProps: true,
+    },
+  },
 })
