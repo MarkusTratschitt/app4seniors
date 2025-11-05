@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts">
 import type { RouteLocationNormalized } from "vue-router";
 import { useRoute } from "vue-router";
 

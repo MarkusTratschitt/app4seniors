@@ -1,0 +1,5 @@
+model_provider = "ollama"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+[shell_environment_policy]
+include_only = ["PATH", "HOME"]

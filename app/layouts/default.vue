@@ -10,8 +10,21 @@ div.app
   footer.app-footer
     small © #{new Date().getFullYear()} Hilfe ohne Rumgetue
 </template>
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+defineOptions({ name: "DefaultLayout" });
+// nix hier, nur smoke-test
+</script>
+
 <style lang="less" scoped>
-.app-header{border-bottom:1px solid #ddd;padding:12px 16px}
-.app-footer{border-top:1px solid #eee;padding:12px 16px;margin-top:24px}
+.app-header {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 16px;
+}
+
+.app-footer {
+  border-top: 1px solid #eee;
+  padding: 12px 16px;
+  margin-top: 24px;
+}
 </style>

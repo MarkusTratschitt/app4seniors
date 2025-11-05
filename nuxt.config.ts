@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  modules: ['@pinia/nuxt'],
+  devtools: { enabled: false },
+  modules: ['@pinia/nuxt', '@nuxtjs/google-fonts', 'nuxt-chatgpt'],
   typescript: { strict: true, typeCheck: true },
   css: ['@/assets/styles/base.less'],
   app: { 
