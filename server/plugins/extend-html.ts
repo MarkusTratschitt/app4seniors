@@ -1,9 +1,16 @@
-export default defineNitroPlugin((nitroApp) => {
-  nitroApp.hooks.hook('render:html', (html, { event }) => {
-    // This will be an object representation of the html template.
-    console.log(html)
-    html.head.push(`<meta name="description" content="My custom description" />`)
-  })
-  // You can also intercept the response here.
-  nitroApp.hooks.hook('render:response', (response, { event }) => { console.log(response) })
-})
+import type { NitroApp } from "nitropack";
+import { defineNitroPlugin } from "nitropack";
+
+type HtmlPayload = {
+  head: string[];
+  body: {
+    prepend: string[];
+    append: string[];
+  };
+};
+
+export default defineNitroPlugin((nitroApp: NitroApp) => {
+  nitroApp.hooks.hook("render:html", (html: HtmlPayload) => {
+    html.head.push('<meta name="description" content="Senioren Tech Hilfe" />');
+  });
+});

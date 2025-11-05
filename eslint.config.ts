@@ -1,12 +1,77 @@
-import js from "@eslint/js";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import pluginVue from "eslint-plugin-vue";
+import vueParser from "vue-eslint-parser";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,ts,mts,cts,vue}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
-  tseslint.configs.recommended,
-  pluginVue.configs["flat/essential"],
-  { files: ["**/*.vue"], languageOptions: { parserOptions: { parser: tseslint.parser } } },
+  {
+    ignores: [
+      "**/.nuxt/**",
+      "**/node_modules/**",
+      "**/.output/**",
+      "**/dist/**",
+      "**/.git/**",
+      "stylelint.config.cjs",
+    ],
+  },
+  ...tseslint.configs.recommendedTypeChecked,
+  pluginVue.configs["flat/recommended"],
+  {
+    files: ["**/*.{ts,tsx,cts,mts,js,jsx,cjs,mjs}"],
+    languageOptions: {
+      parser: tseslint.parser,
+      parserOptions: {
+        project: ["./tsconfig.app.json"],
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        defineAppConfig: "readonly",
+        defineNuxtConfig: "readonly",
+        definePageMeta: "readonly",
+        defineOptions: "readonly",
+        useRoute: "readonly",
+      },
+    },
+    rules: {
+      "vue/multi-word-component-names": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
+    },
+  },
+  {
+    files: ["**/*.vue"],
+    languageOptions: {
+      parser: vueParser,
+      parserOptions: {
+        parser: tseslint.parser,
+        project: ["./tsconfig.app.json"],
+        extraFileExtensions: [".vue"],
+      },
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        defineAppConfig: "readonly",
+        defineNuxtConfig: "readonly",
+        definePageMeta: "readonly",
+        defineOptions: "readonly",
+        useRoute: "readonly",
+      },
+    },
+    plugins: {
+      vue: pluginVue,
+    },
+    rules: {
+      "vue/multi-word-component-names": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off",
+      "@typescript-eslint/no-unsafe-return": "off",
+    },
+  },
 ]);

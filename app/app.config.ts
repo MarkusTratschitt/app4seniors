@@ -1,9 +1,11 @@
+import { defineAppConfig } from "nuxt/app";
+
 export default defineAppConfig({
-  title: 'Hello Nuxt',
+  title: "Senioren Tech Hilfe",
   theme: {
-    dark: true,
+    dark: false,
     colors: {
-      primary: '#ff0000',
+      primary: "#005fcc",
     },
   },
-})
+});

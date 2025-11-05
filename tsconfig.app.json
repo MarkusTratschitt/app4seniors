@@ -7,7 +7,14 @@
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "bundler",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"],
+      "~/*": ["app/*"],
+      "#imports": [".nuxt/imports.d.ts"],
+      "#app": [".nuxt/types/app.d.ts"]
+    }
   },
   "include": ["**/*.ts", "**/*.vue"],
   "exclude": ["node_modules", ".nuxt", ".output"]
