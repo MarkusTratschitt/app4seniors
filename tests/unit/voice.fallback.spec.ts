@@ -18,9 +18,9 @@ describe("VoiceSearch fallback behaviour", () => {
       id: "web",
       isAvailable: () => false,
       requestPermission: vi.fn().mockResolvedValue("unknown"),
-      startListening: vi.fn(),
-      stopListening: vi.fn(),
-      announce: vi.fn(),
+      startListening: vi.fn().mockRejectedValue(new Error("not supported")),
+      stopListening: vi.fn().mockResolvedValue(undefined),
+      announce: vi.fn().mockResolvedValue(undefined),
     };
 
     setVoiceAdapterForTesting(unavailableAdapter);
@@ -42,9 +42,9 @@ describe("VoiceSearch fallback behaviour", () => {
       id: "web",
       isAvailable: () => true,
       requestPermission,
-      startListening: vi.fn(),
-      stopListening: vi.fn(),
-      announce: vi.fn(),
+      startListening: vi.fn().mockResolvedValue(undefined),
+      stopListening: vi.fn().mockResolvedValue(undefined),
+      announce: vi.fn().mockResolvedValue(undefined),
     };
 
     setVoiceAdapterForTesting(adapter);

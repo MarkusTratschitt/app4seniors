@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/consistent-type-definitions */
 export type OSFamily = "ios" | "ipados" | "android" | "windows" | "macos";
 
 type BaseMedia = {

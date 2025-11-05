@@ -83,10 +83,10 @@ export class WebVoiceAdapter implements VoiceAdapter {
     return "unknown";
   }
 
-  async startListening(options: VoiceListenOptions): Promise<void> {
+  startListening(options: VoiceListenOptions): Promise<void> {
     const recognition = this.ensureRecognition();
     if (!recognition) {
-      throw new Error("Web Speech Recognition API is not available.");
+      return Promise.reject(new Error("Web Speech Recognition API is not available."));
     }
 
     this.activeOptions = options;
@@ -127,11 +127,12 @@ export class WebVoiceAdapter implements VoiceAdapter {
     };
 
     recognition.start();
+    return Promise.resolve();
   }
 
-  async stopListening(): Promise<void> {
+  stopListening(): Promise<void> {
     if (!this.recognition) {
-      return;
+      return Promise.resolve();
     }
 
     this.recognition.onresult = null;
@@ -148,6 +149,7 @@ export class WebVoiceAdapter implements VoiceAdapter {
       pendingEnd?.();
       this.activeOptions = null;
     }
+    return Promise.resolve();
   }
 
   async announce(text: string): Promise<void> {
@@ -193,12 +195,12 @@ export class WebVoiceAdapter implements VoiceAdapter {
     }
 
     const win = window as ExtendedWindow;
-    const Ctor = (win.SpeechRecognition || win.webkitSpeechRecognition) as RecognitionConstructor | undefined;
-    if (!Ctor) {
+    const recognitionCtor = win.SpeechRecognition ?? win.webkitSpeechRecognition;
+    if (!recognitionCtor) {
       return null;
     }
 
-    this.recognition = new Ctor();
+    this.recognition = new recognitionCtor();
     return this.recognition;
   }
 }

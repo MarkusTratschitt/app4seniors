@@ -1,8 +1,5 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
-  "references": [
-    { "path": "./.nuxt/tsconfig.app.json" }
-  ],
   "compilerOptions": {
     "strict": true,
     "jsx": "preserve",

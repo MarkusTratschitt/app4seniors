@@ -40,9 +40,12 @@ definePageMeta({
 
 const route = useRoute();
 const router = useRouter();
-const input = ref(typeof route.query.q === "string" ? route.query.q : "");
-const howToModules = import.meta.glob<HowTo>("../../content/howtos/**/*.json", { eager: true, import: "default" });
-const allHowTos = computed(() => Object.values(howToModules));
+const input = ref<string>(typeof route.query.q === "string" ? route.query.q : "");
+const howToModules = import.meta.glob<HowTo>("../../content/howtos/**/*.json", {
+  eager: true,
+  import: "default",
+}) as Record<string, HowTo>;
+const allHowTos = computed<HowTo[]>(() => Object.values(howToModules));
 
 const results = reactive<SearchResponse>({
   normalizedQuery: "",
@@ -70,19 +73,14 @@ watch(
         handleSearch(value);
       }
     } else if (results.normalizedQuery) {
-      Object.assign(results, {
-        normalizedQuery: "",
-        items: [],
-        suggestions: [],
-        intent: undefined,
-      });
+      resetResults();
     }
   },
 );
 
 function handleSearch(query: string) {
   const response = searchHowTos(query, allHowTos.value);
-  Object.assign(results, response);
+  updateResults(response);
   const sanitized = response.normalizedQuery ? response.normalizedQuery : undefined;
   const currentQuery = typeof route.query.q === "string" ? route.query.q : undefined;
   if (sanitized !== currentQuery) {
@@ -90,6 +88,20 @@ function handleSearch(query: string) {
       query: { q: sanitized },
     });
   }
+}
+
+function updateResults(response: SearchResponse) {
+  results.normalizedQuery = response.normalizedQuery;
+  results.items = response.items;
+  results.suggestions = response.suggestions;
+  results.intent = response.intent;
+}
+
+function resetResults() {
+  results.normalizedQuery = "";
+  results.items = [];
+  results.suggestions = [];
+  results.intent = undefined;
 }
 
 function applySuggestion(suggestion: string) {

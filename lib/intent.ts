@@ -37,11 +37,15 @@ export function resolveIntent(query: string, dictionary: IntentDictionary = DEFA
     return null;
   }
 
-  for (const [intent, variants] of Object.entries(dictionary)) {
-    if (variants.some((entry) => normalize(entry) === normalized)) {
+  for (const intent of Object.keys(dictionary)) {
+    const variants = dictionary[intent] ?? [];
+    const normalizedVariants = variants
+      .map((variant) => normalize(variant))
+      .filter((value) => value.length > 0);
+    if (normalizedVariants.includes(normalized)) {
       return {
         intent,
-        keywords: variants.map((variant) => normalize(variant)).filter(Boolean) as string[],
+        keywords: normalizedVariants,
       };
     }
   }
@@ -51,11 +55,13 @@ export function resolveIntent(query: string, dictionary: IntentDictionary = DEFA
 
 export function expandByIntent(query: string, dictionary: IntentDictionary = DEFAULT_INTENTS): string[] {
   const resolution = resolveIntent(query, dictionary);
+  const normalizedQuery = normalize(query);
   if (!resolution) {
-    return [normalize(query)].filter(Boolean) as string[];
+    return normalizedQuery ? [normalizedQuery] : [];
   }
 
-  return Array.from(new Set([normalize(query), ...resolution.keywords].filter(Boolean)));
+  const terms = [normalizedQuery, ...resolution.keywords].filter((value) => value.length > 0);
+  return Array.from(new Set(terms));
 }
 
 export function intentSupportsOS(intent: string, os: OSFamily): boolean {

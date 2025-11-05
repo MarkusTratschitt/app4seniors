@@ -10,6 +10,7 @@ div.app
         ul.app-nav__list
           li.app-nav__item
             NuxtLink.app-nav__link(to="/") Start
+  OfflineBanner/
   main#main.app-main
     div.app-main__inner
       NuxtPage/
@@ -19,9 +20,15 @@ div.app
 </template>
 
 <script setup lang="ts">
+import { useHead } from "#imports";
 import HighContrastToggle from "@/components/HighContrastToggle.vue";
+import OfflineBanner from "@/components/OfflineBanner.vue";
 
 defineOptions({ name: "DefaultLayout" });
+
+useHead({
+  meta: [{ name: "description", content: "Senioren Tech Hilfe" }],
+});
 </script>
 
 <style lang="less" scoped>

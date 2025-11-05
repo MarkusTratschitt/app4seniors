@@ -164,24 +164,40 @@ function levenshtein(a: string, b: string): number {
   const matrix: number[][] = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
 
   for (let i = 0; i <= a.length; i += 1) {
-    matrix[i][0] = i;
+    const row = matrix[i];
+    if (row) {
+      row[0] = i;
+    }
   }
   for (let j = 0; j <= b.length; j += 1) {
-    matrix[0][j] = j;
-  }
-
-  for (let i = 1; i <= a.length; i += 1) {
-    for (let j = 1; j <= b.length; j += 1) {
-      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-      matrix[i][j] = Math.min(
-        matrix[i - 1][j] + 1,
-        matrix[i][j - 1] + 1,
-        matrix[i - 1][j - 1] + cost,
-      );
+    const firstRow = matrix[0];
+    if (firstRow) {
+      firstRow[j] = j;
     }
   }
 
-  return matrix[a.length][b.length];
+  for (let i = 1; i <= a.length; i += 1) {
+    const currentRow = matrix[i];
+    const previousRow = matrix[i - 1];
+    if (!currentRow || !previousRow) {
+      continue;
+    }
+
+    for (let j = 1; j <= b.length; j += 1) {
+      const left = currentRow[j - 1];
+      const up = previousRow[j];
+      const diag = previousRow[j - 1];
+      if (left === undefined || up === undefined || diag === undefined) {
+        continue;
+      }
+
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      currentRow[j] = Math.min(up + 1, left + 1, diag + cost);
+    }
+  }
+
+  const resultRow = matrix[a.length];
+  return resultRow?.[b.length] ?? Math.max(a.length, b.length);
 }
 
 function normalize(input: string): string {

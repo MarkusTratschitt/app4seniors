@@ -13,7 +13,7 @@ div.high-contrast-toggle
 <script setup lang="ts">
 import { computed, onMounted } from "vue";
 import { storeToRefs } from "pinia";
-import { useAppStore } from "@/stores/app";
+import { useAppStore } from "../../stores/app";
 
 const appStore = useAppStore();
 const { highContrast } = storeToRefs(appStore);

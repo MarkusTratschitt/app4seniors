@@ -1,0 +1,17 @@
+{
+  "name": "Senioren Tech Hilfe",
+  "short_name": "Tech Hilfe",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#005fcc",
+  "description": "Anleitungen für Smartphones und Computer – verständlich erklärt.",
+  "icons": [
+    {
+      "src": "/assets/favicon.ico",
+      "sizes": "48x48 64x64 128x128",
+      "type": "image/x-icon",
+      "purpose": "any"
+    }
+  ]
+}

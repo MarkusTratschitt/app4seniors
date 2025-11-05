@@ -6,12 +6,10 @@ const stubMessage = "Sprachfunktionen sind auf dieser Plattform noch nicht verfÃ
 const stubAdapter = (id: PlatformId): VoiceAdapter => ({
   id,
   isAvailable: () => false,
-  requestPermission: async () => "unknown",
-  startListening: async () => {
-    throw new Error(stubMessage);
-  },
-  stopListening: async () => undefined,
-  announce: async () => undefined,
+  requestPermission: () => Promise.resolve("unknown"),
+  startListening: () => Promise.reject(new Error(stubMessage)),
+  stopListening: () => Promise.resolve(),
+  announce: () => Promise.resolve(),
 });
 
 const adapters: Record<PlatformId, VoiceAdapter> = {
@@ -63,5 +61,6 @@ export const ensureVoicePermission = async (): Promise<VoicePermissionState> => 
   if (!adapter.isAvailable()) {
     return "unknown";
   }
-  return adapter.requestPermission();
+  const permission = await adapter.requestPermission();
+  return permission;
 };

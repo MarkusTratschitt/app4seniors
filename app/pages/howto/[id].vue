@@ -23,12 +23,12 @@ const route = useRoute();
 const howToModules = import.meta.glob<HowTo>("../../../../content/howtos/**/*.json", {
   import: "default",
   eager: true,
-});
+}) as Record<string, HowTo>;
 
-const howToIndex = Object.values(howToModules).reduce<Record<string, HowTo>>((accumulator, entry) => {
+const howToIndex: Record<string, HowTo> = Object.values(howToModules).reduce((accumulator, entry) => {
   accumulator[entry.slug] = entry;
   return accumulator;
-}, {});
+}, {} as Record<string, HowTo>);
 
 const slug = computed(() => String(route.params.id ?? ""));
 const activeHowTo = computed<HowTo | null>(() => howToIndex[slug.value] ?? null);

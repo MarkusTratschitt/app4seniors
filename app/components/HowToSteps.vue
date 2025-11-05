@@ -43,9 +43,9 @@ section.howto-steps(:aria-labelledby="headingId")
             @error="handleMediaError(item.id)"
           )
           figcaption(v-if="item.description") {{ item.description }}
-        figure.howto-media.howto-media--audio(v-else-if="item.type === 'audio'")
+        figure.howto-media.howto-media--audio(v-else-if="item.type === 'audio' && !isMediaBroken(item.id)")
           figcaption {{ item.alt }}
-          audio(controls preload="metadata" :aria-label="item.alt")
+          audio(controls preload="metadata" :aria-label="item.alt" @error="handleMediaError(item.id)")
             source(:src="item.src" type="audio/mpeg")
           p.howto-media__transcript(v-if="item.transcript") {{ item.transcript }}
         figure.howto-media.howto-media--video(v-else-if="item.type === 'video' && !isMediaBroken(item.id)")
@@ -60,15 +60,25 @@ section.howto-steps(:aria-labelledby="headingId")
             track(v-if="item.captions" kind="captions" :src="item.captions" label="Untertitel")
           figcaption(v-if="item.description") {{ item.description }}
         div.howto-media-fallback(role="note" v-else)
-          strong Alternativtext:
-          p {{ item.alt }}
+          span.howto-media-fallback__icon aria-hidden="true" 📦
+          div.howto-media-fallback__content
+            strong.howto-media-fallback__title {{ item.alt }}
+            p.howto-media-fallback__description(v-if="!isOnline") Medien sind offline nicht verfügbar.
+            template(v-else)
+              p.howto-media-fallback__description Dieses Medium konnte nicht geladen werden.
+              a.howto-media-fallback__download(
+                :href="item.src"
+                download
+                target="_blank"
+                rel="noopener"
+              ) Original herunterladen
   p.howto-steps__finished-message(v-if="finished" aria-live="polite")
     strong Gut gemacht!
     |  Du hast alle Schritte abgeschlossen.
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import type { HowTo } from "../../types/content";
 import "@/assets/styles/howto.less";
 
@@ -90,6 +100,7 @@ const headingRef = ref<HTMLElement | null>(null);
 const currentIndex = ref(Math.max(0, Math.min(props.initialStep ?? 0, props.howTo.steps.length - 1)));
 const finished = ref(false);
 const brokenMediaIds = ref(new Set<string>());
+const isOnline = ref(typeof navigator === "undefined" ? true : navigator.onLine);
 
 const totalSteps = computed(() => props.howTo.steps.length);
 const activeStep = computed(() => props.howTo.steps[currentIndex.value]);
@@ -178,11 +189,21 @@ function handleMediaError(id: string) {
   brokenMediaIds.value.add(id);
 }
 
+function updateOnlineStatus() {
+  if (typeof navigator !== "undefined") {
+    isOnline.value = navigator.onLine;
+  }
+}
+
 onMounted(() => {
   window.addEventListener("keydown", handleKeydown);
+  window.addEventListener("online", updateOnlineStatus);
+  window.addEventListener("offline", updateOnlineStatus);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("keydown", handleKeydown);
+  window.removeEventListener("online", updateOnlineStatus);
+  window.removeEventListener("offline", updateOnlineStatus);
 });
 </script>

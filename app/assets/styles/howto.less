@@ -160,6 +160,41 @@
   gap: var(--space-2);
 }
 
+.howto-media-fallback__icon {
+  font-size: 1.5rem;
+}
+
+.howto-media-fallback__title {
+  display: block;
+}
+
+.howto-media-fallback__content {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.howto-media-fallback__description {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.howto-media-fallback__download {
+  justify-self: flex-start;
+  border-radius: var(--radius-sm);
+  border: var(--border-width) solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  padding: var(--space-1) var(--space-3);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.howto-media-fallback__download:hover,
+.howto-media-fallback__download:focus-visible {
+  background-color: var(--color-link-hover);
+}
+
 .howto-steps__finished-message {
   margin: 0;
   font-size: var(--font-size-lg);
