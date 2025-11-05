@@ -4,6 +4,7 @@ section.search-page
     h1.search-page__title Suche nach Anleitungen
     p.search-page__lead Finde hilfreiche Schritte für dein Gerät. Du kannst Begriffe wie "Screenshot", "Update" oder "teilen" eingeben.
     SearchBar(v-model="input" @search="handleSearch")
+    VoiceSearch(v-model="input" @search="handleSearch")
   div.search-page__status(role="status" aria-live="polite")
     span(v-if="results.items.length") {{ results.items.length }} Treffer für "{{ results.normalizedQuery }}"
     span(v-else-if="results.normalizedQuery") Keine Treffer für "{{ results.normalizedQuery }}"
@@ -25,11 +26,13 @@ section.search-page
 </template>
 
 <script setup lang="ts">
-import { computed, reactive, ref, watch } from "vue";
+import { computed, onMounted, reactive, ref, watch } from "vue";
 import { useRoute, useRouter } from "#imports";
 import type { HowTo } from "../../types/content";
 import SearchBar from "@/components/SearchBar.vue";
+import VoiceSearch from "@/components/VoiceSearch.vue";
 import { searchHowTos, type SearchResponse } from "../../lib/search";
+import { announce } from "../../lib/voice";
 
 definePageMeta({
   name: "SearchPage",
@@ -51,6 +54,10 @@ const results = reactive<SearchResponse>({
 if (input.value) {
   handleSearch(input.value);
 }
+
+onMounted(() => {
+  void announce("Suche nach Anleitungen. Du kannst tippen oder den Mikrofon-Knopf benutzen.");
+});
 
 watch(
   () => route.query.q,
