@@ -1,0 +1,58 @@
+{
+  "id": "howto-android-notfallinfo",
+  "slug": "android-notfallinformationen",
+  "os": "android",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Notfallinformationen hinterlegen",
+  "summary": "Trage medizinische Infos ein, damit Helferinnen schnell Bescheid wissen.",
+  "keywords": ["notfallinfo", "medizinische daten", "sicherheit", "android"],
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "id": "android-notfallinfo-1",
+      "order": 1,
+      "title": "Einstellungen öffnen",
+      "description": "Tippe auf das Zahnrad-Symbol oder öffne die App über die Apps-Übersicht.",
+      "media": [
+        {
+          "id": "android-notfallinfo-1-image",
+          "type": "image",
+          "src": "/media/placeholders/android/notfall-step1.png",
+          "alt": "Android Startbildschirm mit markierter Einstellungen-App."
+        }
+      ]
+    },
+    {
+      "id": "android-notfallinfo-2",
+      "order": 2,
+      "title": "Sicherheit & Notfall",
+      "description": "Scrolle zu \"Sicherheit & Notfall\" und tippe darauf, um die Notfall-Einstellungen zu öffnen.",
+      "media": [
+        {
+          "id": "android-notfallinfo-2-image",
+          "type": "image",
+          "src": "/media/placeholders/android/notfall-step2.png",
+          "alt": "Menü Sicherheit & Notfall mit hervorgehobener Option."
+        }
+      ]
+    },
+    {
+      "id": "android-notfallinfo-3",
+      "order": 3,
+      "title": "Informationen eintragen",
+      "description": "Wähle \"Medizinische Informationen\" und trage Allergien, Medikamente oder Ansprechpartner ein.",
+      "media": [
+        {
+          "id": "android-notfallinfo-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/android/notfall-step3.mp3",
+          "alt": "Kurzer Hinweistext zur Bedeutung der Notfallinfos.",
+          "transcript": "Je mehr Informationen vorhanden sind, desto besser können Ersthelfer reagieren."
+        }
+      ],
+      "tips": [
+        "Denke daran, eine Kontaktperson mit Telefonnummer einzutragen."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "howto-windows-bildschirm-vergroessern",
+  "slug": "windows-bildschirm-vergroessern",
+  "os": "windows",
+  "osVersion": { "min": "10", "max": "11" },
+  "title": "Bildschirm mit der Lupe vergrößern",
+  "summary": "Nutze die Windows-Lupe, um Inhalte leichter zu lesen.",
+  "keywords": ["lupe", "vergrößerung", "barrierefreiheit", "bedienungshilfen"],
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "id": "windows-bildschirm-vergroessern-1",
+      "order": 1,
+      "title": "Lupe starten",
+      "description": "Drücke Windows-Taste und Plus (+), um die Lupe einzuschalten.",
+      "media": [
+        {
+          "id": "windows-bildschirm-vergroessern-1-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/lupe-step1.png",
+          "alt": "Tastatur mit hervorgehobenen Windows- und Plus-Tasten."
+        }
+      ]
+    },
+    {
+      "id": "windows-bildschirm-vergroessern-2",
+      "order": 2,
+      "title": "Vergrößerung wählen",
+      "description": "Nutze Plus, um stärker zu vergrößern, oder Minus, um die Ansicht zu verkleinern.",
+      "media": [
+        {
+          "id": "windows-bildschirm-vergroessern-2-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/lupe-step2.png",
+          "alt": "Windows-Lupe Bedienfeld mit Plus- und Minus-Schaltflächen."
+        }
+      ]
+    },
+    {
+      "id": "windows-bildschirm-vergroessern-3",
+      "order": 3,
+      "title": "Modus ändern",
+      "description": "Klicke im Lupen-Fenster auf die Ansichtsauswahl, um zwischen Vollbild, Dock und Lupe zu wechseln.",
+      "media": [
+        {
+          "id": "windows-bildschirm-vergroessern-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/windows/lupe-step3.mp3",
+          "alt": "Erklärung der verschiedenen Lupenmodi.",
+          "transcript": "Der Vollbildmodus vergrößert alles, während der Dock-Modus nur einen Streifen zeigt."
+        }
+      ],
+      "tips": [
+        "Drücke Windows + Esc, um die Lupe wieder auszuschalten."
+      ]
+    }
+  ]
+}

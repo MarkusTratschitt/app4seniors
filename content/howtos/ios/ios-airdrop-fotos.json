@@ -1,0 +1,58 @@
+{
+  "id": "howto-ios-airdrop-fotos",
+  "slug": "ios-airdrop-fotos",
+  "os": "ios",
+  "osVersion": { "min": "15", "max": "17" },
+  "title": "Fotos per AirDrop teilen",
+  "summary": "Lerne, wie du ein Foto sicher mit einer vertrauten Person über AirDrop teilst.",
+  "keywords": ["airdrop", "foto teilen", "ios hilfe", "schnell teilen"],
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "id": "ios-airdrop-fotos-1",
+      "order": 1,
+      "title": "Foto-App öffnen",
+      "description": "Tippe auf das farbige Blumen-Symbol, um die Fotos-App zu öffnen.",
+      "media": [
+        {
+          "id": "ios-airdrop-fotos-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/airdrop-step1.png",
+          "alt": "Symbol der Fotos-App auf einem iPhone-Startbildschirm."
+        }
+      ]
+    },
+    {
+      "id": "ios-airdrop-fotos-2",
+      "order": 2,
+      "title": "Foto auswählen",
+      "description": "Tippe auf das gewünschte Foto und drücke danach unten links auf das Teilen-Symbol.",
+      "media": [
+        {
+          "id": "ios-airdrop-fotos-2-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/airdrop-step2.png",
+          "alt": "Fotoanzeige mit markiertem Teilen-Symbol in der Werkzeugleiste."
+        }
+      ]
+    },
+    {
+      "id": "ios-airdrop-fotos-3",
+      "order": 3,
+      "title": "AirDrop Empfänger wählen",
+      "description": "Wähle die Person aus der AirDrop-Liste aus. Ein Ton bestätigt das erfolgreiche Teilen.",
+      "media": [
+        {
+          "id": "ios-airdrop-fotos-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/ios/airdrop-tone.mp3",
+          "alt": "Klangbeispiel für den AirDrop-Sendeton.",
+          "transcript": "Ein kurzer heller Klang, der das Teilen bestätigt."
+        }
+      ],
+      "tips": [
+        "Stelle sicher, dass Bluetooth und WLAN eingeschaltet sind."
+      ]
+    }
+  ]
+}

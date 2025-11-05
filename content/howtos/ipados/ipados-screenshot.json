@@ -1,0 +1,55 @@
+{
+  "id": "howto-ipados-screenshot",
+  "slug": "ipados-screenshot",
+  "os": "ipados",
+  "osVersion": { "min": "15", "max": "17" },
+  "title": "Screenshot aufnehmen",
+  "summary": "Erstelle ein Bildschirmfoto und teile es mit Freundinnen oder Familie.",
+  "keywords": ["screenshot", "bildschirmfoto", "kurzanleitung", "teilen"],
+  "estimatedMinutes": 3,
+  "steps": [
+    {
+      "id": "ipados-screenshot-1",
+      "order": 1,
+      "title": "Tasten drücken",
+      "description": "Drücke gleichzeitig die obere Taste und eine Lautstärketaste und lasse sie schnell los.",
+      "media": [
+        {
+          "id": "ipados-screenshot-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/screenshot-step1.png",
+          "alt": "iPad mit markierten Tasten für einen Screenshot."
+        }
+      ]
+    },
+    {
+      "id": "ipados-screenshot-2",
+      "order": 2,
+      "title": "Vorschau antippen",
+      "description": "Tippe auf die Vorschau unten links, um den Screenshot zu bearbeiten oder weiterzuschicken.",
+      "media": [
+        {
+          "id": "ipados-screenshot-2-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/screenshot-step2.png",
+          "alt": "Screenshot-Vorschau mit markierter Bearbeiten-Schaltfläche."
+        }
+      ]
+    },
+    {
+      "id": "ipados-screenshot-3",
+      "order": 3,
+      "title": "Teilen oder speichern",
+      "description": "Tippe auf das Teilen-Symbol oder wähle \"Fertig\", um den Screenshot im Fotoalbum abzulegen.",
+      "media": [
+        {
+          "id": "ipados-screenshot-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/ipados/screenshot-summary.mp3",
+          "alt": "Sprachhinweis zum Teilen eines iPad Bildschirmfotos.",
+          "transcript": "Nach dem Tippen auf Fertig kannst du auswählen, ob das Bild gespeichert oder gelöscht wird."
+        }
+      ]
+    }
+  ]
+}

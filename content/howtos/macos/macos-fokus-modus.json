@@ -1,0 +1,55 @@
+{
+  "id": "howto-macos-fokus-modus",
+  "slug": "macos-fokus-modus",
+  "os": "macos",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Fokus-Modus einstellen",
+  "summary": "Blende störende Mitteilungen aus, wenn du Ruhe brauchst.",
+  "keywords": ["fokus", "nicht stören", "mitteilungen", "mac produktivität"],
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "id": "macos-fokus-modus-1",
+      "order": 1,
+      "title": "Kontrollzentrum öffnen",
+      "description": "Klicke oben rechts auf das Kontrollzentrum-Symbol mit den Schaltern.",
+      "media": [
+        {
+          "id": "macos-fokus-modus-1-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/fokus-step1.png",
+          "alt": "Kontrollzentrum-Symbol in der macOS Menüleiste."
+        }
+      ]
+    },
+    {
+      "id": "macos-fokus-modus-2",
+      "order": 2,
+      "title": "Fokus wählen",
+      "description": "Klicke auf \"Fokus\" und wähle einen vorhandenen Fokus oder lege einen neuen an.",
+      "media": [
+        {
+          "id": "macos-fokus-modus-2-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/fokus-step2.png",
+          "alt": "Fokus-Menü mit Optionen wie Ruhezeit und Arbeit."
+        }
+      ]
+    },
+    {
+      "id": "macos-fokus-modus-3",
+      "order": 3,
+      "title": "Zeitplan festlegen",
+      "description": "Öffne die Einstellungen über \"Fokus-Einstellungen\" und wähle Zeitpläne oder Personen, die dich weiterhin erreichen dürfen.",
+      "media": [
+        {
+          "id": "macos-fokus-modus-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/macos/fokus-step3.mp3",
+          "alt": "Audio erklärt, wie ein Fokus automatisch startet.",
+          "transcript": "Lege eine Uhrzeit oder einen Ort fest, damit der Fokus sich selbst aktiviert."
+        }
+      ]
+    }
+  ]
+}

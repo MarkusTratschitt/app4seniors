@@ -1,0 +1,58 @@
+{
+  "id": "howto-ipados-files-share",
+  "slug": "ipados-files-share",
+  "os": "ipados",
+  "osVersion": { "min": "15", "max": "17" },
+  "title": "Datei in Dateien-App teilen",
+  "summary": "Teile ein Dokument aus der Dateien-App mit einer vertrauenswürdigen Person.",
+  "keywords": ["datei teilen", "files app", "freigabe", "icloud drive"],
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "id": "ipados-files-share-1",
+      "order": 1,
+      "title": "Dateien-App öffnen",
+      "description": "Tippe auf das blaue Ordner-Symbol, um die Dateien-App zu starten.",
+      "media": [
+        {
+          "id": "ipados-files-share-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/files-share-step1.png",
+          "alt": "Startbildschirm des iPad mit markiertem Dateien-App Symbol."
+        }
+      ]
+    },
+    {
+      "id": "ipados-files-share-2",
+      "order": 2,
+      "title": "Dokument auswählen",
+      "description": "Navigiere zu deinem Dokument und tippe es an, um es zu markieren.",
+      "media": [
+        {
+          "id": "ipados-files-share-2-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/files-share-step2.png",
+          "alt": "Dokumentenliste mit ausgewählter Datei."
+        }
+      ]
+    },
+    {
+      "id": "ipados-files-share-3",
+      "order": 3,
+      "title": "Teilen-Menü öffnen",
+      "description": "Tippe auf das Teilen-Symbol und wähle die gewünschte Person oder App.",
+      "media": [
+        {
+          "id": "ipados-files-share-3-video",
+          "type": "video",
+          "src": "/media/placeholders/ipados/files-share-step3.mp4",
+          "alt": "Video zeigt die Freigabeoptionen in der Dateien-App.",
+          "poster": "/media/placeholders/ipados/files-share-step3-poster.png"
+        }
+      ],
+      "tips": [
+        "Nutze \"Link kopieren\", wenn die Person nicht in der Liste erscheint."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "howto-windows-updates",
+  "slug": "windows-updates-installieren",
+  "os": "windows",
+  "osVersion": { "min": "10", "max": "11" },
+  "title": "Windows Updates installieren",
+  "summary": "Halte deinen Computer sicher, indem du verfügbare Windows-Updates installierst.",
+  "keywords": ["windows update", "sicherheit", "wartung", "systempflege"],
+  "estimatedMinutes": 10,
+  "steps": [
+    {
+      "id": "windows-updates-1",
+      "order": 1,
+      "title": "Einstellungen öffnen",
+      "description": "Klicke auf das Startmenü und dann auf das Zahnrad-Symbol, um die Einstellungen zu öffnen.",
+      "media": [
+        {
+          "id": "windows-updates-1-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/updates-step1.png",
+          "alt": "Windows Startmenü mit markiertem Zahnrad-Symbol."
+        }
+      ]
+    },
+    {
+      "id": "windows-updates-2",
+      "order": 2,
+      "title": "Update & Sicherheit",
+      "description": "Wähle in den Einstellungen den Bereich \"Update & Sicherheit\" aus.",
+      "media": [
+        {
+          "id": "windows-updates-2-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/updates-step2.png",
+          "alt": "Einstellungsfenster mit hervorgehobener Kachel Update & Sicherheit."
+        }
+      ]
+    },
+    {
+      "id": "windows-updates-3",
+      "order": 3,
+      "title": "Nach Updates suchen",
+      "description": "Klicke auf \"Nach Updates suchen\". Windows lädt und installiert verfügbare Updates automatisch.",
+      "media": [
+        {
+          "id": "windows-updates-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/windows/updates-step3.mp3",
+          "alt": "Audiospur mit Hinweis zur Update-Installation.",
+          "transcript": "Während Updates installiert werden, kann der PC neu starten. Speichere vorher deine Arbeit."
+        }
+      ],
+      "tips": [
+        "Plane etwas Zeit ein. Der Computer kann mehrfach neu starten."
+      ]
+    }
+  ]
+}

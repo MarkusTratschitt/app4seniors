@@ -1,0 +1,58 @@
+{
+  "id": "howto-ios-screenshot",
+  "slug": "ios-screenshot",
+  "os": "ios",
+  "osVersion": { "min": "14", "max": "17" },
+  "title": "Screenshot aufnehmen",
+  "summary": "Speichere den Bildschirm als Bild, um ihn später zu zeigen oder zu schicken.",
+  "keywords": ["screenshot", "bildschirmfoto", "aufnahme", "teilen"],
+  "estimatedMinutes": 3,
+  "steps": [
+    {
+      "id": "ios-screenshot-1",
+      "order": 1,
+      "title": "Knöpfe drücken",
+      "description": "Drücke gleichzeitig die rechte Seitentaste und die Lauter-Taste. Lass beide Knöpfe nach einem Klick los.",
+      "media": [
+        {
+          "id": "ios-screenshot-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/screenshot-step1.png",
+          "alt": "iPhone mit markierten Seitentasten für den Screenshot."
+        }
+      ]
+    },
+    {
+      "id": "ios-screenshot-2",
+      "order": 2,
+      "title": "Vorschau bearbeiten",
+      "description": "Tippe kurz auf die Vorschau unten links, um das Bild zu beschriften oder zuzuschneiden.",
+      "media": [
+        {
+          "id": "ios-screenshot-2-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/screenshot-step2.png",
+          "alt": "Screenshot-Vorschau mit Bearbeitungswerkzeugen."
+        }
+      ]
+    },
+    {
+      "id": "ios-screenshot-3",
+      "order": 3,
+      "title": "Screenshot speichern",
+      "description": "Tippe auf \"Fertig\" und wähle \"In Fotos sichern\", damit das Bild in der Fotos-App landet.",
+      "media": [
+        {
+          "id": "ios-screenshot-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/ios/screenshot-tip.mp3",
+          "alt": "Gesprochene Anleitung zum Speichern des Bildschirmfotos.",
+          "transcript": "Du kannst die Vorschau sofort teilen. Wenn du nichts tust, wird der Screenshot automatisch gespeichert."
+        }
+      ],
+      "tips": [
+        "Falls du ein iPhone mit Home-Button hast, drücke Home + Power gleichzeitig."
+      ]
+    }
+  ]
+}

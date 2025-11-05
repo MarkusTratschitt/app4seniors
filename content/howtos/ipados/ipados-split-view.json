@@ -1,0 +1,58 @@
+{
+  "id": "howto-ipados-split-view",
+  "slug": "ipados-split-view",
+  "os": "ipados",
+  "osVersion": { "min": "16", "max": "17" },
+  "title": "Split View verwenden",
+  "summary": "Zeige zwei Apps nebeneinander an, um schneller zu arbeiten.",
+  "keywords": ["split view", "mehrere apps", "multitasking", "fenster"],
+  "estimatedMinutes": 7,
+  "steps": [
+    {
+      "id": "ipados-split-view-1",
+      "order": 1,
+      "title": "Dock öffnen",
+      "description": "Streiche leicht vom unteren Bildschirmrand nach oben, bis das Dock erscheint.",
+      "media": [
+        {
+          "id": "ipados-split-view-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/split-view-step1.png",
+          "alt": "iPad Bildschirm mit eingeblendetem Dock."
+        }
+      ]
+    },
+    {
+      "id": "ipados-split-view-2",
+      "order": 2,
+      "title": "App ziehen",
+      "description": "Halte das Symbol der zweiten App gedrückt und ziehe es an den linken oder rechten Bildschirmrand.",
+      "media": [
+        {
+          "id": "ipados-split-view-2-video",
+          "type": "video",
+          "src": "/media/placeholders/ipados/split-view-step2.mp4",
+          "alt": "Video zeigt das Ziehen einer App in Split View.",
+          "poster": "/media/placeholders/ipados/split-view-step2-poster.png"
+        }
+      ]
+    },
+    {
+      "id": "ipados-split-view-3",
+      "order": 3,
+      "title": "Größe anpassen",
+      "description": "Bewege die Trennlinie zwischen den Apps, um mehr Platz für eine App zu geben.",
+      "media": [
+        {
+          "id": "ipados-split-view-3-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/split-view-step3.png",
+          "alt": "Trennlinie zwischen zwei Apps mit Pfeil zum Verschieben."
+        }
+      ],
+      "tips": [
+        "Tippe oben auf die drei Punkte, um Apps zu tauschen."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "howto-ios-display-zoom",
+  "slug": "ios-display-zoom",
+  "os": "ios",
+  "osVersion": { "min": "15", "max": "17" },
+  "title": "Anzeige vergrößern",
+  "summary": "Passe die Bildschirmgröße an, damit Text und Symbole leichter zu lesen sind.",
+  "keywords": ["zoom", "schriftgröße", "bedienungshilfen", "anzeige"],
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "id": "ios-display-zoom-1",
+      "order": 1,
+      "title": "Einstellungen öffnen",
+      "description": "Tippe auf das graue Zahnrad-Symbol, um Einstellungen zu starten.",
+      "media": [
+        {
+          "id": "ios-display-zoom-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/display-zoom-step1.png",
+          "alt": "Einstellungs-App Symbol auf dem iPhone Startbildschirm."
+        }
+      ]
+    },
+    {
+      "id": "ios-display-zoom-2",
+      "order": 2,
+      "title": "Anzeige & Helligkeit öffnen",
+      "description": "Scrolle leicht nach unten und tippe auf \"Anzeige & Helligkeit\".",
+      "media": [
+        {
+          "id": "ios-display-zoom-2-video",
+          "type": "video",
+          "src": "/media/placeholders/ios/display-zoom-step2.mp4",
+          "alt": "Kurzes Video, das zeigt, wo Anzeige & Helligkeit zu finden ist.",
+          "poster": "/media/placeholders/ios/display-zoom-step2-poster.png",
+          "captions": "/media/placeholders/ios/display-zoom-step2.vtt"
+        }
+      ]
+    },
+    {
+      "id": "ios-display-zoom-3",
+      "order": 3,
+      "title": "Anzeigezoom wählen",
+      "description": "Tippe auf \"Anzeigezoom\" und wähle \"Vergrößert\". Bestätige mit \"Einstellen\".",
+      "media": [
+        {
+          "id": "ios-display-zoom-3-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/display-zoom-step3.png",
+          "alt": "Anzeigezoom-Option Vergrößert im iPhone Menü."
+        }
+      ],
+      "tips": [
+        "Das Gerät startet kurz neu, damit die Änderung wirksam wird."
+      ]
+    }
+  ]
+}

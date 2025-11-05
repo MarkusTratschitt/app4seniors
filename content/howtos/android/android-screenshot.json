@@ -1,0 +1,55 @@
+{
+  "id": "howto-android-screenshot",
+  "slug": "android-screenshot",
+  "os": "android",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Screenshot erstellen",
+  "summary": "Erfahre, wie du schnell ein Bildschirmfoto unter Android speicherst.",
+  "keywords": ["screenshot", "bildschirmfoto", "android hilfe", "teilen"],
+  "estimatedMinutes": 3,
+  "steps": [
+    {
+      "id": "android-screenshot-1",
+      "order": 1,
+      "title": "Knöpfe drücken",
+      "description": "Drücke die Leiser-Taste und die Ein/Aus-Taste gleichzeitig, bis der Bildschirm kurz blinkt.",
+      "media": [
+        {
+          "id": "android-screenshot-1-image",
+          "type": "image",
+          "src": "/media/placeholders/android/screenshot-step1.png",
+          "alt": "Android Gerät mit markierten Lautstärke- und Power-Tasten."
+        }
+      ]
+    },
+    {
+      "id": "android-screenshot-2",
+      "order": 2,
+      "title": "Vorschau prüfen",
+      "description": "Tippe auf die Vorschau, um zu bearbeiten, oder warte, damit der Screenshot automatisch gespeichert wird.",
+      "media": [
+        {
+          "id": "android-screenshot-2-image",
+          "type": "image",
+          "src": "/media/placeholders/android/screenshot-step2.png",
+          "alt": "Screenshot-Vorschau unten links mit Bearbeitungsoption."
+        }
+      ]
+    },
+    {
+      "id": "android-screenshot-3",
+      "order": 3,
+      "title": "Screenshot teilen",
+      "description": "Tippe auf das Teilen-Symbol, um das Bild zu senden, oder öffne die Fotos-App zum späteren Teilen.",
+      "media": [
+        {
+          "id": "android-screenshot-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/android/screenshot-summary.mp3",
+          "alt": "Sprachhinweis, wie der Screenshot geteilt wird.",
+          "transcript": "Nach dem Drücken der Teilen-Taste kannst du Nachrichten-Apps, E-Mail oder Cloud-Dienste wählen."
+        }
+      ]
+    }
+  ]
+}

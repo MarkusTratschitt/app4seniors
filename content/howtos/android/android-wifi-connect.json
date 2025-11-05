@@ -1,0 +1,58 @@
+{
+  "id": "howto-android-wifi-connect",
+  "slug": "android-wifi-verbinden",
+  "os": "android",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "WLAN-Verbindung herstellen",
+  "summary": "Verbinde dein Android-Gerät sicher mit einem bekannten WLAN-Netz.",
+  "keywords": ["wlan", "netzwerk", "internet", "android einrichten"],
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "id": "android-wifi-connect-1",
+      "order": 1,
+      "title": "Schnelleinstellungen öffnen",
+      "description": "Streiche zweimal vom oberen Rand nach unten, um die Schnelleinstellungen vollständig zu sehen.",
+      "media": [
+        {
+          "id": "android-wifi-connect-1-image",
+          "type": "image",
+          "src": "/media/placeholders/android/wifi-step1.png",
+          "alt": "Schnelleinstellungsfeld mit WLAN-Symbol hervorgehoben."
+        }
+      ]
+    },
+    {
+      "id": "android-wifi-connect-2",
+      "order": 2,
+      "title": "WLAN-Liste anzeigen",
+      "description": "Halte das WLAN-Symbol gedrückt oder tippe darauf, um zur WLAN-Einstellungsseite zu wechseln.",
+      "media": [
+        {
+          "id": "android-wifi-connect-2-video",
+          "type": "video",
+          "src": "/media/placeholders/android/wifi-step2.mp4",
+          "alt": "Video zeigt, wie man von den Schnelleinstellungen in die WLAN-Liste gelangt.",
+          "poster": "/media/placeholders/android/wifi-step2-poster.png"
+        }
+      ]
+    },
+    {
+      "id": "android-wifi-connect-3",
+      "order": 3,
+      "title": "Netzwerk auswählen",
+      "description": "Tippe auf den Namen deines WLANs, gib das Passwort ein und bestätige mit \"Verbinden\".",
+      "media": [
+        {
+          "id": "android-wifi-connect-3-image",
+          "type": "image",
+          "src": "/media/placeholders/android/wifi-step3.png",
+          "alt": "Android WLAN-Eingabefeld mit Fokus auf Passwort."
+        }
+      ],
+      "tips": [
+        "Setze einen Haken bei \"Automatisch verbinden\", damit dein Gerät das Netzwerk künftig selbst wählt."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "howto-macos-screenshot",
+  "slug": "macos-screenshot",
+  "os": "macos",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Screenshot auf dem Mac aufnehmen",
+  "summary": "Speichere den Bildschirm oder einen Ausschnitt als Bilddatei.",
+  "keywords": ["screenshot", "bildschirmfoto", "mac hilfe", "macos"],
+  "estimatedMinutes": 3,
+  "steps": [
+    {
+      "id": "macos-screenshot-1",
+      "order": 1,
+      "title": "Tastenkombination nutzen",
+      "description": "Drücke Shift + Command + 5, um die Screenshot-Leiste einzublenden.",
+      "media": [
+        {
+          "id": "macos-screenshot-1-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/screenshot-step1.png",
+          "alt": "Mac-Tastatur mit markierten Tasten Shift, Command und 5."
+        }
+      ]
+    },
+    {
+      "id": "macos-screenshot-2",
+      "order": 2,
+      "title": "Bereich wählen",
+      "description": "Klicke auf \"Ausgewählter Bereich\" und markiere den Ausschnitt, den du speichern möchtest.",
+      "media": [
+        {
+          "id": "macos-screenshot-2-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/screenshot-step2.png",
+          "alt": "Screenshot-Werkzeug mit aktivem Bereichsrahmen."
+        }
+      ]
+    },
+    {
+      "id": "macos-screenshot-3",
+      "order": 3,
+      "title": "Aufnehmen und sichern",
+      "description": "Klicke auf \"Aufnehmen\". Die Vorschau erscheint unten rechts. Ziehe sie an den Schreibtisch, um sie dort abzulegen.",
+      "media": [
+        {
+          "id": "macos-screenshot-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/macos/screenshot-step3.mp3",
+          "alt": "Hinweis, wie der Screenshot gespeichert wird.",
+          "transcript": "Die Datei landet standardmäßig auf dem Schreibtisch und trägt den Namen Bildschirmfoto mit Datum."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "howto-macos-airdrop",
+  "slug": "macos-airdrop",
+  "os": "macos",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Dateien mit AirDrop senden",
+  "summary": "Teile Dokumente oder Fotos schnell mit einem iPhone oder Mac in der Nähe.",
+  "keywords": ["airdrop", "datei teilen", "macos", "drahtlos senden"],
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "id": "macos-airdrop-1",
+      "order": 1,
+      "title": "Finder öffnen",
+      "description": "Klicke auf das Finder-Symbol im Dock, um ein neues Fenster zu öffnen.",
+      "media": [
+        {
+          "id": "macos-airdrop-1-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/airdrop-step1.png",
+          "alt": "Finder-Symbol im macOS Dock mit blauem Gesichtssymbol."
+        }
+      ]
+    },
+    {
+      "id": "macos-airdrop-2",
+      "order": 2,
+      "title": "AirDrop wählen",
+      "description": "Klicke in der Seitenleiste auf \"AirDrop\" und stelle sicher, dass du gefunden werden kannst.",
+      "media": [
+        {
+          "id": "macos-airdrop-2-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/airdrop-step2.png",
+          "alt": "AirDrop Fenster mit hervorgehobener Einstellung 'Nur Kontakte'."
+        }
+      ]
+    },
+    {
+      "id": "macos-airdrop-3",
+      "order": 3,
+      "title": "Datei senden",
+      "description": "Ziehe die Datei auf das Symbol der gewünschten Person. Bestätige, wenn du aufgefordert wirst.",
+      "media": [
+        {
+          "id": "macos-airdrop-3-video",
+          "type": "video",
+          "src": "/media/placeholders/macos/airdrop-step3.mp4",
+          "alt": "Video zeigt das Ziehen einer Datei in das AirDrop Fenster.",
+          "poster": "/media/placeholders/macos/airdrop-step3-poster.png"
+        }
+      ],
+      "tips": [
+        "Wenn die Person nicht sichtbar ist, bittet sie, AirDrop ebenfalls zu öffnen."
+      ]
+    }
+  ]
+}

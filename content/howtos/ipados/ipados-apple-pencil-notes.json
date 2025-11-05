@@ -1,0 +1,55 @@
+{
+  "id": "howto-ipados-apple-pencil-notes",
+  "slug": "ipados-apple-pencil-notes",
+  "os": "ipados",
+  "osVersion": { "min": "15", "max": "17" },
+  "title": "Schnelle Notizen mit dem Apple Pencil",
+  "summary": "Erfahre, wie du sofort eine Notiz anlegst, sobald der Gedanke da ist.",
+  "keywords": ["apple pencil", "notizen", "quick note", "schreiben"],
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "id": "ipados-apple-pencil-notes-1",
+      "order": 1,
+      "title": "Pencil aktivieren",
+      "description": "Berühre mit dem Apple Pencil die untere rechte Ecke des Bildschirms.",
+      "media": [
+        {
+          "id": "ipados-apple-pencil-notes-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/pencil-note-step1.png",
+          "alt": "Apple Pencil berührt die Ecke eines iPad Displays."
+        }
+      ]
+    },
+    {
+      "id": "ipados-apple-pencil-notes-2",
+      "order": 2,
+      "title": "Notiz schreiben",
+      "description": "Schreibe deinen Gedanken frei Hand in die eingeblendete Notiz.",
+      "media": [
+        {
+          "id": "ipados-apple-pencil-notes-2-image",
+          "type": "image",
+          "src": "/media/placeholders/ipados/pencil-note-step2.png",
+          "alt": "Quick Note Fenster mit handschriftlichem Text."
+        }
+      ]
+    },
+    {
+      "id": "ipados-apple-pencil-notes-3",
+      "order": 3,
+      "title": "Notiz sichern",
+      "description": "Tippe auf \"Fertig\" oder streiche die Notiz zur Seite, um sie automatisch in Notizen zu speichern.",
+      "media": [
+        {
+          "id": "ipados-apple-pencil-notes-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/ipados/pencil-note-tip.mp3",
+          "alt": "Hinweis zur Sicherung einer Quick Note.",
+          "transcript": "Deine Notiz landet im Ordner Quick Notes und ist auf deinen Geräten sichtbar."
+        }
+      ]
+    }
+  ]
+}

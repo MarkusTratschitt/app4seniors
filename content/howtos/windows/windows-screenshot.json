@@ -1,0 +1,55 @@
+{
+  "id": "howto-windows-screenshot",
+  "slug": "windows-screenshot",
+  "os": "windows",
+  "osVersion": { "min": "10", "max": "11" },
+  "title": "Bildschirmfoto unter Windows machen",
+  "summary": "Speichere den Bildschirm schnell als Bilddatei.",
+  "keywords": ["screenshot", "bildschirmfoto", "windows hilfe", "snipping tool"],
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "id": "windows-screenshot-1",
+      "order": 1,
+      "title": "Tastenkombination drücken",
+      "description": "Halte die Windows-Taste gedrückt und tippe kurz auf Shift + S, um das Snipping Tool zu öffnen.",
+      "media": [
+        {
+          "id": "windows-screenshot-1-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/screenshot-step1.png",
+          "alt": "Tastatur mit markierten Windows-, Shift- und S-Tasten."
+        }
+      ]
+    },
+    {
+      "id": "windows-screenshot-2",
+      "order": 2,
+      "title": "Bereich auswählen",
+      "description": "Ziehe mit der Maus ein Rechteck über den gewünschten Bereich. Lasse die Maustaste los, um das Bild zu übernehmen.",
+      "media": [
+        {
+          "id": "windows-screenshot-2-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/screenshot-step2.png",
+          "alt": "Snipping Tool Auswahlrahmen auf dem Bildschirm."
+        }
+      ]
+    },
+    {
+      "id": "windows-screenshot-3",
+      "order": 3,
+      "title": "Screenshot speichern",
+      "description": "In dem kleinen Fenster des Snipping Tools klicke auf das Diskettensymbol und wähle einen Speicherort.",
+      "media": [
+        {
+          "id": "windows-screenshot-3-video",
+          "type": "video",
+          "src": "/media/placeholders/windows/screenshot-step3.mp4",
+          "alt": "Video zeigt das Speichern eines Screenshots im Snipping Tool.",
+          "poster": "/media/placeholders/windows/screenshot-step3-poster.png"
+        }
+      ]
+    }
+  ]
+}

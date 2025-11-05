@@ -1,0 +1,55 @@
+{
+  "id": "howto-windows-taskleiste-pin",
+  "slug": "windows-taskleiste-pin",
+  "os": "windows",
+  "osVersion": { "min": "10", "max": "11" },
+  "title": "Programm an die Taskleiste anheften",
+  "summary": "Lege deine Lieblingsprogramme fest in der Taskleiste ab.",
+  "keywords": ["taskleiste", "schnellstart", "programme anheften", "windows tipps"],
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "id": "windows-taskleiste-pin-1",
+      "order": 1,
+      "title": "Programm suchen",
+      "description": "Klicke auf das Startmenü und tippe den Programmnamen in das Suchfeld ein.",
+      "media": [
+        {
+          "id": "windows-taskleiste-pin-1-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/taskleiste-step1.png",
+          "alt": "Startmenü mit eingegebenem Programmnamen im Suchfeld."
+        }
+      ]
+    },
+    {
+      "id": "windows-taskleiste-pin-2",
+      "order": 2,
+      "title": "An Taskleiste anheften",
+      "description": "Klicke mit der rechten Maustaste auf das Suchergebnis und wähle \"An Taskleiste anheften\".",
+      "media": [
+        {
+          "id": "windows-taskleiste-pin-2-image",
+          "type": "image",
+          "src": "/media/placeholders/windows/taskleiste-step2.png",
+          "alt": "Kontextmenü mit Option An Taskleiste anheften."
+        }
+      ]
+    },
+    {
+      "id": "windows-taskleiste-pin-3",
+      "order": 3,
+      "title": "Position prüfen",
+      "description": "Das Symbol erscheint nun in der Taskleiste. Ziehe es bei Bedarf an eine andere Stelle.",
+      "media": [
+        {
+          "id": "windows-taskleiste-pin-3-video",
+          "type": "video",
+          "src": "/media/placeholders/windows/taskleiste-step3.mp4",
+          "alt": "Video zeigt das Verschieben eines Taskleisten-Symbols.",
+          "poster": "/media/placeholders/windows/taskleiste-step3-poster.png"
+        }
+      ]
+    }
+  ]
+}

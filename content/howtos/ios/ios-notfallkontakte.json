@@ -1,0 +1,72 @@
+{
+  "id": "howto-ios-notfallkontakte",
+  "slug": "ios-notfallkontakte",
+  "os": "ios",
+  "osVersion": { "min": "16", "max": "17" },
+  "title": "Notfallkontakte hinterlegen",
+  "summary": "Lege Personen fest, die im Notfall von deinem iPhone benachrichtigt werden.",
+  "keywords": ["notruf", "gesundheit", "kontakte", "notfallpass"],
+  "estimatedMinutes": 6,
+  "steps": [
+    {
+      "id": "ios-notfallkontakte-1",
+      "order": 1,
+      "title": "Health-App öffnen",
+      "description": "Tippe auf das Herzsymbol, um die Health-App zu starten, und wähle oben rechts dein Profil aus.",
+      "media": [
+        {
+          "id": "ios-notfallkontakte-1-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/notfallkontakte-step1.png",
+          "alt": "Health-App Symbol mit hervorgehobener Profil-Schaltfläche."
+        }
+      ]
+    },
+    {
+      "id": "ios-notfallkontakte-2",
+      "order": 2,
+      "title": "Notfallpass bearbeiten",
+      "description": "Tippe auf \"Notfallpass\" und dann auf \"Bearbeiten\", um deine Daten anzupassen.",
+      "media": [
+        {
+          "id": "ios-notfallkontakte-2-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/notfallkontakte-step2.png",
+          "alt": "Bildschirm mit dem Menüpunkt Notfallpass und der Bearbeiten-Schaltfläche."
+        }
+      ]
+    },
+    {
+      "id": "ios-notfallkontakte-3",
+      "order": 3,
+      "title": "Kontakt hinzufügen",
+      "description": "Tippe auf \"Notfallkontakt hinzufügen\" und wähle eine Person aus deinen Kontakten.",
+      "media": [
+        {
+          "id": "ios-notfallkontakte-3-image",
+          "type": "image",
+          "src": "/media/placeholders/ios/notfallkontakte-step3.png",
+          "alt": "Kontaktliste mit ausgewähltem Notfallkontakt."
+        }
+      ],
+      "tips": [
+        "Füge mehrere Kontakte hinzu, damit immer jemand erreichbar ist."
+      ]
+    },
+    {
+      "id": "ios-notfallkontakte-4",
+      "order": 4,
+      "title": "Änderungen sichern",
+      "description": "Scrolle nach unten und tippe auf \"Fertig\", damit die Einstellungen gespeichert werden.",
+      "media": [
+        {
+          "id": "ios-notfallkontakte-4-audio",
+          "type": "audio",
+          "src": "/media/placeholders/ios/notfallkontakte-summary.mp3",
+          "alt": "Zusammenfassung, dass der Notfallpass aktualisiert wurde.",
+          "transcript": "Dein Notfallpass ist nun auf dem Sperrbildschirm einsehbar."
+        }
+      ]
+    }
+  ]
+}

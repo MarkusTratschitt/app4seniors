@@ -1,0 +1,58 @@
+{
+  "id": "howto-android-home-kacheln",
+  "slug": "android-home-kacheln-ordnen",
+  "os": "android",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Startbildschirm anpassen",
+  "summary": "Lerne, wie du wichtige Apps als große Kacheln platzierst.",
+  "keywords": ["startbildschirm", "kacheln", "widgets", "android tipps"],
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "id": "android-home-kacheln-1",
+      "order": 1,
+      "title": "Widget-Menü öffnen",
+      "description": "Lege einen Finger lange auf eine freie Stelle des Startbildschirms und tippe auf \"Widgets\".",
+      "media": [
+        {
+          "id": "android-home-kacheln-1-image",
+          "type": "image",
+          "src": "/media/placeholders/android/home-kacheln-step1.png",
+          "alt": "Android Startbildschirm mit eingeblendetem Widgets-Menü."
+        }
+      ]
+    },
+    {
+      "id": "android-home-kacheln-2",
+      "order": 2,
+      "title": "Widget auswählen",
+      "description": "Wähle die App aus der Liste und halte das gewünschte Widget gedrückt.",
+      "media": [
+        {
+          "id": "android-home-kacheln-2-image",
+          "type": "image",
+          "src": "/media/placeholders/android/home-kacheln-step2.png",
+          "alt": "Widget-Übersicht mit markiertem Kalender-Widget."
+        }
+      ]
+    },
+    {
+      "id": "android-home-kacheln-3",
+      "order": 3,
+      "title": "Widget platzieren",
+      "description": "Ziehe die Kachel an die gewünschte Stelle. Lasse los, um sie zu platzieren. Passe die Größe über die Eckpunkte an.",
+      "media": [
+        {
+          "id": "android-home-kacheln-3-video",
+          "type": "video",
+          "src": "/media/placeholders/android/home-kacheln-step3.mp4",
+          "alt": "Video zeigt, wie ein Widget auf dem Startbildschirm platziert wird.",
+          "poster": "/media/placeholders/android/home-kacheln-step3-poster.png"
+        }
+      ],
+      "tips": [
+        "Nutze mehrere Startseiten, um Ordnung zu halten."
+      ]
+    }
+  ]
+}

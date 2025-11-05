@@ -1,0 +1,55 @@
+{
+  "id": "howto-macos-textgroesse",
+  "slug": "macos-textgroesse-anpassen",
+  "os": "macos",
+  "osVersion": { "min": "12", "max": "14" },
+  "title": "Textgröße im Finder anpassen",
+  "summary": "Vergrößere Text in Ordnern, damit Dateinamen leichter lesbar sind.",
+  "keywords": ["textgröße", "finder", "zugänglichkeit", "mac einstellungen"],
+  "estimatedMinutes": 4,
+  "steps": [
+    {
+      "id": "macos-textgroesse-1",
+      "order": 1,
+      "title": "Finder Fenster öffnen",
+      "description": "Klicke auf das Finder-Symbol im Dock oder nutze die Tastenkombination Command + N.",
+      "media": [
+        {
+          "id": "macos-textgroesse-1-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/textgroesse-step1.png",
+          "alt": "Finder Fenster auf dem Mac mit Seitenleiste."
+        }
+      ]
+    },
+    {
+      "id": "macos-textgroesse-2",
+      "order": 2,
+      "title": "Darstellungsoptionen öffnen",
+      "description": "Drücke Command + J oder klicke im Menü auf Darstellung > Darstellungsoptionen einblenden.",
+      "media": [
+        {
+          "id": "macos-textgroesse-2-image",
+          "type": "image",
+          "src": "/media/placeholders/macos/textgroesse-step2.png",
+          "alt": "Darstellungsoptionen Fenster mit verschiedenen Einstellungen."
+        }
+      ]
+    },
+    {
+      "id": "macos-textgroesse-3",
+      "order": 3,
+      "title": "Textgröße einstellen",
+      "description": "Wähle im Dropdown \"Textgröße\" einen größeren Wert und schließe das Fenster.",
+      "media": [
+        {
+          "id": "macos-textgroesse-3-audio",
+          "type": "audio",
+          "src": "/media/placeholders/macos/textgroesse-step3.mp3",
+          "alt": "Audio erklärt die Wirkung der Textgrößenänderung.",
+          "transcript": "Die neuen Einstellungen gelten sofort für den aktuellen Ordner."
+        }
+      ]
+    }
+  ]
+}
