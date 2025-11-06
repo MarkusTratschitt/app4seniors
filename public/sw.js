@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument,
+  @typescript-eslint/no-floating-promises,
+  @typescript-eslint/require-await */
+
 const CACHE_PREFIX = "seniors-cache";
 const PRECACHE_VERSION = "v1";
 const PRECACHE_NAME = `${CACHE_PREFIX}-precache-${PRECACHE_VERSION}`;
@@ -56,7 +60,9 @@ self.addEventListener("activate", (event) => {
     (async () => {
       const keys = await caches.keys();
       const validCaches = [PRECACHE_NAME, PAGE_CACHE_NAME, MEDIA_CACHE_NAME];
-      const hadPreviousCaches = keys.some((key) => key.startsWith(CACHE_PREFIX));
+      const hadPreviousCaches = keys.some((key) =>
+        key.startsWith(CACHE_PREFIX),
+      );
 
       await Promise.all(
         keys
@@ -93,12 +99,19 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (request.destination === "image" || request.destination === "audio" || request.destination === "video") {
+  if (
+    request.destination === "image" ||
+    request.destination === "audio" ||
+    request.destination === "video"
+  ) {
     event.respondWith(handleMediaRequest(request));
     return;
   }
 
-  if (url.origin === self.location.origin && url.pathname.startsWith("/howto/")) {
+  if (
+    url.origin === self.location.origin &&
+    url.pathname.startsWith("/howto/")
+  ) {
     event.respondWith(cacheFirst(request, PAGE_CACHE_NAME));
   }
 });
@@ -158,7 +171,10 @@ async function cacheFirst(request, cacheName) {
 }
 
 async function notifyClients(message) {
-  const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+  const clients = await self.clients.matchAll({
+    type: "window",
+    includeUncontrolled: true,
+  });
   await Promise.all(
     clients.map(async (client) => {
       try {

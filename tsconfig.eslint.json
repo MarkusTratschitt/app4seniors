@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.vue",
+    "app/**/*",
+    "components/**/*",
+    "pages/**/*",
+    "composables/**/*",
+    "types/**/*",
+    "public/**/*"
+  ],
+  "exclude": ["node_modules", ".nuxt", ".output"]
+}

@@ -5,7 +5,11 @@ section.page-home
   ul.page-home__features
     li Nutze die Suche, um eine Anleitung zu finden.
     li Probiere die Tastatur: TAB zum Navigieren, Enter zum Auswählen.
-  NuxtLink.page-home__link(to="/about") Mehr erfahren
+  ul
+    li 
+      NuxtLink.page-home__link(to="/about") Mehr erfahren
+    li 
+      NuxtLink.page-home__link(to="/howto-steps") HowToSteps
 </template>
 
 <script setup lang="ts">

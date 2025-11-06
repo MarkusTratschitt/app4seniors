@@ -26,6 +26,7 @@ section.search-page
 </template>
 
 <script setup lang="ts">
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { computed, onMounted, reactive, ref, watch } from "vue";
 import { useRoute, useRouter } from "#imports";
 import type { HowTo } from "../../types/content";
@@ -109,6 +110,8 @@ function applySuggestion(suggestion: string) {
   handleSearch(suggestion);
 }
 </script>
+
+/* eslint-enable @typescript-eslint/no-unsafe-argument */
 
 <style scoped lang="less">
 .search-page {

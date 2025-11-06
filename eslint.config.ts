@@ -22,7 +22,7 @@ export default defineConfig([
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-        project: ["./tsconfig.app.json"],
+        project: ["./tsconfig.eslint.json"],
       },
       globals: {
         ...globals.browser,
@@ -49,7 +49,7 @@ export default defineConfig([
       parser: vueParser,
       parserOptions: {
         parser: tseslint.parser,
-        project: ["./tsconfig.app.json"],
+        project: ["./tsconfig.eslint.json"],
         extraFileExtensions: [".vue"],
       },
       globals: {
