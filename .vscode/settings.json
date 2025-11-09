@@ -147,5 +147,6 @@
   "notebook.defaultFormatter": "Nuxtr.nuxtr-vscode",
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  }
+  },
+  "todo-tree.tree.scanMode": "workspace only"
 }
